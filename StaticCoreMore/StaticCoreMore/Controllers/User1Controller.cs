@@ -14,7 +14,5 @@ namespace StaticCoreMore.Controllers
         public IActionResult InvoiceCreate() { return View(); }
         public IActionResult InvoiceView() { return View(); }
         public IActionResult InvoiceList() { return View(); }
-
-        public IActionResult InvoiceListt() { return View(); }
     }
 }
