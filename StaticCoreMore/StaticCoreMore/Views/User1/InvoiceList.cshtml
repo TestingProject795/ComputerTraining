@@ -1,0 +1,356 @@
+﻿
+@{
+    Layout = "~/views/shared/_user1layout.cshtml";
+}
+
+<!-- App body starts -->
+<div class="app-body">
+
+    <!-- Row start -->
+    <div class="row gx-4">
+        <div class="col-xxl-3 col-sm-6 col-12">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h6>Total Invoices</h6>
+                    <span class="monthDisplay mb-3 badge bg-primary-subtle text-primary">In May</span>
+                    <div class="d-flex align-items-center">
+                        <div class="icon-box md rounded-5 bg-primary">
+                            <i class="bi bi-file-earmark-text fs-5"></i>
+                        </div>
+                        <small class="ms-2 badge bg-primary-subtle text-primary">80% high.</small>
+                        <h2 class="ms-auto">65</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xxl-3 col-sm-6 col-12">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h6>Paid Invoices</h6>
+                    <span class="monthDisplay mb-3 badge bg-primary-subtle text-primary">In May</span>
+                    <div class="d-flex align-items-center">
+                        <div class="icon-box md rounded-5 bg-primary">
+                            <i class="bi bi-cash-stack fs-5"></i>
+                        </div>
+                        <small class="ms-2 badge bg-primary-subtle text-primary">60% high.</small>
+                        <h2 class="ms-auto">89</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xxl-3 col-sm-6 col-12">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h6>Pending Invoices</h6>
+                    <span class="monthDisplay mb-3 badge bg-primary-subtle text-primary">In May</span>
+                    <div class="d-flex align-items-center">
+                        <div class="icon-box md rounded-5 bg-primary">
+                            <i class="bi bi-hourglass-split fs-5"></i>
+                        </div>
+                        <small class="ms-2 badge bg-primary-subtle text-primary">30% low.</small>
+                        <h2 class="ms-auto">47</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xxl-3 col-sm-6 col-12">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h6>Overdue Invoices</h6>
+                    <span class="monthDisplay mb-3 badge bg-primary-subtle text-primary">In May</span>
+                    <div class="d-flex align-items-center">
+                        <div class="icon-box md rounded-5 bg-primary">
+                            <i class="bi bi-exclamation-circle fs-5"></i>
+                        </div>
+                        <small class="ms-2 badge bg-primary-subtle text-primary">20% low.</small>
+                        <h2 class="ms-auto">33</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Row end -->
+    <!-- Row start -->
+    <div class="row">
+        <div class="col-12">
+            <!-- Card starts -->
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h5 class="card-title">Invoice List</h5>
+                    <div>
+                        <a href="create-invoice.html" class="btn btn-primary">
+                            <i class="bi bi-plus-circle me-1"></i>Create Invoice
+                        </a>
+                    </div>
+                </div>
+                <div class="card-body">
+
+                    <!-- Row start -->
+                    <div class="row justify-content-between mb-4">
+                        <div class="col-sm-4">
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    <i class="bi bi-search text-muted"></i>
+                                </span>
+                                <input type="text" class="form-control" id="searchInvoice" placeholder="Search invoices...">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center gap-2">
+                                <select class="form-select" id="statusFilter" aria-label="Filter by payment status">
+                                    <option selected="">Status</option>
+                                    <option>Paid</option>
+                                    <option>Pending</option>
+                                    <option>Overdue</option>
+                                    <option>Cancelled</option>
+                                </select>
+                                <select class="form-select" id="dateFilter" aria-label="Filter by date range">
+                                    <option selected="">Date</option>
+                                    <option>Last 7 days</option>
+                                    <option>Last 30 days</option>
+                                    <option>Last 90 days</option>
+                                    <option>Custom date</option>
+                                </select>
+                                <button type="button" class="btn btn-primary">
+                                    Filter
+                                </button>
+                                <div class="dropdown">
+                                    <button class="btn btn-soft-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                        <i class="bi bi-three-dots"></i>
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end">
+                                        <li><a class="dropdown-item" href="#">Export to Excel</a></li>
+                                        <li><a class="dropdown-item" href="#">Export to PDF</a></li>
+                                        <li><a class="dropdown-item" href="#">Download Invoices</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Row end -->
+                    <!-- Row start -->
+                    <div class="row gx-4">
+                        <div class="col-sm-12">
+                            <!-- Table responsive wrapper -->
+                            <div class="invoice-table-container">
+                                <div class="table-outer">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover align-middle mb-1">
+                                            <thead class="table-light">
+                                                <tr>
+                                                    <th scope="col">
+                                                        <div class="form-check form-check-warning">
+                                                            <input class="form-check-input" type="checkbox" id="selectAll" aria-label="Select all invoices" data-bs-toggle="tooltip" data-bs-original-title="Warning: This will select all invoices on this page">
+                                                            <label class="form-check-label" for="selectAll">Select All</label>
+                                                        </div>
+                                                    </th>
+                                                    <th scope="col">Invoice #</th>
+                                                    <th scope="col">Client</th>
+                                                    <th scope="col">Issue Date</th>
+                                                    <th scope="col">Due Date</th>
+                                                    <th scope="col">Amount</th>
+                                                    <th scope="col">Status</th>
+                                                    <th scope="col">Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="invoice-0025" name="selected-invoices[]" value="INV-0025" aria-label="Select invoice #INV-0025">
+                                                        </div>
+                                                    </td>
+                                                    <td><a href="invoice.html" class="text-primary fw-semibold">#INV-0025</a></td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="assets/images/user1.png" class="rounded-circle me-2" width="32" alt="Client">
+                                                            <span>Emily Wilson</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>15 Oct 2025</td>
+                                                    <td>30 Oct 2025</td>
+                                                    <td class="fw-semibold">$1,280.00</td>
+                                                    <td><span class="badge bg-success-subtle text-success">Paid</span></td>
+                                                    <td>
+                                                        <div class="d-flex gap-1">
+                                                            <button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="tooltip" title="Edit user">
+                                                                <i class="bi bi-pencil"></i>
+                                                            </button>
+                                                            <button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="tooltip" title="Delete user">
+                                                                <i class="bi bi-trash"></i>
+                                                            </button>
+                                                            <a href="student-profile.html" class="btn btn-sm btn-outline-primary" data-bs-toggle="tooltip" title="View profile">
+                                                                <i class="bi bi-eye"></i>
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="invoice-0024" aria-label="Select invoice #INV-0024">
+                                                        </div>
+                                                    </td>
+                                                    <td><a href="invoice.html" class="text-primary fw-semibold">#INV-0024</a></td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="assets/images/user3.png" class="rounded-circle me-2" width="32" alt="Client">
+                                                            <span>Michael Johnson</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>12 Oct 2025</td>
+                                                    <td>26 Oct 2025</td>
+                                                    <td class="fw-semibold">$950.50</td>
+                                                    <td><span class="badge bg-warning-subtle text-warning">Pending</span></td>
+                                                    <td>
+                                                        <div class="d-flex gap-1">
+                                                            <button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="tooltip" title="Edit user">
+                                                                <i class="bi bi-pencil"></i>
+                                                            </button>
+                                                            <button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="tooltip" title="Delete user">
+                                                                <i class="bi bi-trash"></i>
+                                                            </button>
+                                                            <a href="student-profile.html" class="btn btn-sm btn-outline-primary" data-bs-toggle="tooltip" title="View profile">
+                                                                <i class="bi bi-eye"></i>
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="invoice-0023" aria-label="Select invoice #INV-0023">
+                                                        </div>
+                                                    </td>
+                                                    <td><a href="invoice.html" class="text-primary fw-semibold">#INV-0023</a></td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="assets/images/user4.png" class="rounded-circle me-2" width="32" alt="Client">
+                                                            <span>Jessica Brown</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>10 Oct 2025</td>
+                                                    <td>10 Oct 2025</td>
+                                                    <td class="fw-semibold">$2,500.00</td>
+                                                    <td><span class="badge bg-success-subtle text-success">Paid</span></td>
+                                                    <td>
+                                                        <div class="d-flex gap-1">
+                                                            <button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="tooltip" title="Edit user">
+                                                                <i class="bi bi-pencil"></i>
+                                                            </button>
+                                                            <button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="tooltip" title="Delete user">
+                                                                <i class="bi bi-trash"></i>
+                                                            </button>
+                                                            <a href="student-profile.html" class="btn btn-sm btn-outline-primary" data-bs-toggle="tooltip" title="View profile">
+                                                                <i class="bi bi-eye"></i>
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="invoice-0022" aria-label="Select invoice #INV-0022">
+                                                        </div>
+                                                    </td>
+                                                    <td><a href="invoice.html" class="text-primary fw-semibold">#INV-0022</a></td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="assets/images/user5.png" class="rounded-circle me-2" width="32" alt="Client">
+                                                            <span>David Smith</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>05 Oct 2025</td>
+                                                    <td>20 Oct 2025</td>
+                                                    <td class="fw-semibold">$785.25</td>
+                                                    <td><span class="badge bg-danger-subtle text-danger">Overdue</span></td>
+                                                    <td>
+                                                        <div class="d-flex gap-1">
+                                                            <button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="tooltip" title="Edit user">
+                                                                <i class="bi bi-pencil"></i>
+                                                            </button>
+                                                            <button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="tooltip" title="Delete user">
+                                                                <i class="bi bi-trash"></i>
+                                                            </button>
+                                                            <a href="student-profile.html" class="btn btn-sm btn-outline-primary" data-bs-toggle="tooltip" title="View profile">
+                                                                <i class="bi bi-eye"></i>
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="invoice-0021" aria-label="Select invoice #INV-0021">
+                                                        </div>
+                                                    </td>
+                                                    <td><a href="invoice.html" class="text-primary fw-semibold">#INV-0021</a></td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="assets/images/user2.png" class="rounded-circle me-2" width="32" alt="Client">
+                                                            <span>Sarah Wilson</span>
+                                                        </div>
+                                                    </td>
+                                                    <td>01 Oct 2025</td>
+                                                    <td>15 Oct 2025</td>
+                                                    <td class="fw-semibold">$1,750.00</td>
+                                                    <td><span class="badge bg-secondary-subtle text-body">Cancelled</span></td>
+                                                    <td>
+                                                        <div class="d-flex gap-1">
+                                                            <button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="tooltip" title="Edit user">
+                                                                <i class="bi bi-pencil"></i>
+                                                            </button>
+                                                            <button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="tooltip" title="Delete user">
+                                                                <i class="bi bi-trash"></i>
+                                                            </button>
+                                                            <a href="student-profile.html" class="btn btn-sm btn-outline-primary" data-bs-toggle="tooltip" title="View profile">
+                                                                <i class="bi bi-eye"></i>
+                                                            </a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Pagination -->
+                            <div class="d-flex justify-content-between align-items-center mt-3 flex-wrap">
+                                <div class="text-muted">
+                                    Showing <span class="fw-semibold">1-5</span> of <span class="fw-semibold">28</span> invoices
+                                </div>
+                                <nav aria-label="Page navigation">
+                                    <ul class="pagination mb-0">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true"><i class="bi bi-arrow-left"></i></span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true"><i class="bi bi-arrow-right"></i></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Row end -->
+
+                </div>
+            </div>
+            <!-- Card ends -->
+
+        </div>
+    </div>
+    <!-- Row end -->
+
+
+
+</div>
+<!-- App body ends -->

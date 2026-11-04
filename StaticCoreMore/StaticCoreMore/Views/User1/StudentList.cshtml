@@ -1,0 +1,575 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/views/shared/_user1layout.cshtml";
+}
+
+<!-- App body starts -->
+<div class="app-body">
+
+    <!-- Row start -->
+    <div class="row gx-4">
+        <!-- Total Students -->
+        <div class="col-xxl-3 col-sm-6">
+            <div class="card border-primary mb-4">
+                <div class="card-body text-center p-0">
+                    <div class="bg-primary-subtle text-primary p-3 rounded-3">
+                        <i class="bi bi-mortarboard fs-5"></i>
+                    </div>
+                    <div class="p-2">
+                        <h6 class="text-muted mb-1">Total Students</h6>
+                        <h4 class="fw-bold mb-0">1,568</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- New Admissions -->
+        <div class="col-xxl-3 col-sm-6">
+            <div class="card border-success mb-4">
+                <div class="card-body text-center p-0">
+                    <div class="bg-success-subtle text-success p-3 rounded-3">
+                        <i class="bi bi-person-plus fs-5"></i>
+                    </div>
+                    <div class="p-2">
+                        <h6 class="text-muted mb-1">New Admissions</h6>
+                        <h4 class="fw-bold mb-0">64</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Absent Today -->
+        <div class="col-xxl-3 col-sm-6">
+            <div class="card border-danger mb-4">
+                <div class="card-body text-center p-0">
+                    <div class="bg-danger-subtle text-danger p-3 rounded-3">
+                        <i class="bi bi-person-x fs-5"></i>
+                    </div>
+                    <div class="p-2">
+                        <h6 class="text-muted mb-1">Absent Today</h6>
+                        <h4 class="fw-bold mb-0">38</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Present Today -->
+        <div class="col-xxl-3 col-sm-6">
+            <div class="card border-warning mb-4">
+                <div class="card-body text-center p-0">
+                    <div class="bg-warning-subtle text-warning p-3 rounded-3">
+                        <i class="bi bi-check-circle fs-5"></i>
+                    </div>
+                    <div class="p-2">
+                        <h6 class="text-muted mb-1">Present Today</h6>
+                        <h4 class="fw-bold mb-0">1,530</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Row end -->
+    <!-- Row start -->
+    <div class="row g-4 mb-4">
+        <!-- Class 1 -->
+        <div class="col-xxl-2 col-sm-3 col-12">
+            <a href="javascript:void(0)" class="card text-center border-info" data-bs-toggle="modal" data-bs-target="#studentListModal">
+                <div class="card-body p-2">
+                    <div class="bg-info-subtle text-info rounded-circle icon-box md m-auto mb-2">
+                        <i class="bi bi-1-circle fs-5"></i>
+                    </div>
+                    <h6 class="mb-0">Class 1</h6>
+                    <small class="text-muted">45 Students</small>
+                </div>
+            </a>
+        </div>
+
+        <!-- Class 2 -->
+        <div class="col-xxl-2 col-sm-3 col-12">
+            <a href="javascript:void(0)" class="card text-center border-primary" data-bs-toggle="modal" data-bs-target="#studentListModal">
+                <div class="card-body p-2">
+                    <div class="bg-primary-subtle text-primary rounded-circle icon-box md m-auto mb-2">
+                        <i class="bi bi-2-circle fs-5"></i>
+                    </div>
+                    <h6 class="mb-0">Class 2</h6>
+                    <small class="text-muted">42 Students</small>
+                </div>
+            </a>
+        </div>
+
+        <!-- Class 3 -->
+        <div class="col-xxl-2 col-sm-3 col-12">
+            <a href="javascript:void(0)" class="card text-center border-success" data-bs-toggle="modal" data-bs-target="#studentListModal">
+                <div class="card-body p-2">
+                    <div class="bg-success-subtle text-success rounded-circle icon-box md m-auto mb-2">
+                        <i class="bi bi-3-circle fs-5"></i>
+                    </div>
+                    <h6 class="mb-0">Class 3</h6>
+                    <small class="text-muted">48 Students</small>
+                </div>
+            </a>
+        </div>
+
+        <!-- Class 4 -->
+        <div class="col-xxl-2 col-sm-3 col-12">
+            <a href="javascript:void(0)" class="card text-center border-warning" data-bs-toggle="modal" data-bs-target="#studentListModal">
+                <div class="card-body p-2">
+                    <div class="bg-warning-subtle text-warning rounded-circle icon-box md m-auto mb-2">
+                        <i class="bi bi-4-circle fs-5"></i>
+                    </div>
+                    <h6 class="mb-0">Class 4</h6>
+                    <small class="text-muted">50 Students</small>
+                </div>
+            </a>
+        </div>
+
+        <!-- Class 5 -->
+        <div class="col-xxl-2 col-sm-3 col-12">
+            <a href="javascript:void(0)" class="card text-center border-danger" data-bs-toggle="modal" data-bs-target="#studentListModal">
+                <div class="card-body p-2">
+                    <div class="bg-danger-subtle text-danger rounded-circle icon-box md m-auto mb-2">
+                        <i class="bi bi-5-circle fs-5"></i>
+                    </div>
+                    <h6 class="mb-0">Class 5</h6>
+                    <small class="text-muted">47 Students</small>
+                </div>
+            </a>
+        </div>
+
+        <!-- Class 6 -->
+        <div class="col-xxl-2 col-sm-3 col-12">
+            <a href="javascript:void(0)" class="card text-center border-secondary" data-bs-toggle="modal" data-bs-target="#studentListModal">
+                <div class="card-body p-2">
+                    <div class="bg-secondary-subtle text-secondary rounded-circle icon-box md m-auto mb-2">
+                        <i class="bi bi-6-circle fs-5"></i>
+                    </div>
+                    <h6 class="mb-0">Class 6</h6>
+                    <small class="text-muted">43 Students</small>
+                </div>
+            </a>
+        </div>
+
+        <!-- Class 7 -->
+        <div class="col-xxl-2 col-sm-3 col-12">
+            <a href="javascript:void(0)" class="card text-center border-info" data-bs-toggle="modal" data-bs-target="#studentListModal">
+                <div class="card-body p-2">
+                    <div class="bg-info-subtle text-info rounded-circle icon-box md m-auto mb-2">
+                        <i class="bi bi-7-circle fs-5"></i>
+                    </div>
+                    <h6 class="mb-0">Class 7</h6>
+                    <small class="text-muted">51 Students</small>
+                </div>
+            </a>
+        </div>
+
+        <!-- Class 8 -->
+        <div class="col-xxl-2 col-sm-3 col-12">
+            <a href="javascript:void(0)" class="card text-center border-primary" data-bs-toggle="modal" data-bs-target="#studentListModal">
+                <div class="card-body p-2">
+                    <div class="bg-primary-subtle text-primary rounded-circle icon-box md m-auto mb-2">
+                        <i class="bi bi-8-circle fs-5"></i>
+                    </div>
+                    <h6 class="mb-0">Class 8</h6>
+                    <small class="text-muted">49 Students</small>
+                </div>
+            </a>
+        </div>
+
+        <!-- Class 9 -->
+        <div class="col-xxl-2 col-sm-3 col-12">
+            <a href="javascript:void(0)" class="card text-center border-success" data-bs-toggle="modal" data-bs-target="#studentListModal">
+                <div class="card-body p-2">
+                    <div class="bg-success-subtle text-success rounded-circle icon-box md m-auto mb-2">
+                        <i class="bi bi-9-circle fs-5"></i>
+                    </div>
+                    <h6 class="mb-0">Class 9</h6>
+                    <small class="text-muted">46 Students</small>
+                </div>
+            </a>
+        </div>
+
+        <!-- Class 10 -->
+        <div class="col-xxl-2 col-sm-3 col-12">
+            <a href="javascript:void(0)" class="card text-center border-warning" data-bs-toggle="modal" data-bs-target="#studentListModal">
+                <div class="card-body p-2">
+                    <div class="bg-warning-subtle text-warning rounded-circle icon-box md m-auto mb-2">
+                        <i class="bi bi-emoji-smile fs-5"></i>
+                    </div>
+                    <h6 class="mb-0">Class 10</h6>
+                    <small class="text-muted">52 Students</small>
+                </div>
+            </a>
+        </div>
+
+        <!-- Class 11 -->
+        <div class="col-xxl-2 col-sm-3 col-12">
+            <a href="javascript:void(0)" class="card text-center border-danger" data-bs-toggle="modal" data-bs-target="#studentListModal">
+                <div class="card-body p-2">
+                    <div class="bg-danger-subtle text-danger rounded-circle icon-box md m-auto mb-2">
+                        <i class="bi bi-emoji-smile fs-5"></i>
+                    </div>
+                    <h6 class="mb-0">Class 11</h6>
+                    <small class="text-muted">48 Students</small>
+                </div>
+            </a>
+        </div>
+
+        <!-- Class 12 -->
+        <div class="col-xxl-2 col-sm-3 col-12">
+            <a href="javascript:void(0)" class="card text-center border-secondary" data-bs-toggle="modal" data-bs-target="#studentListModal">
+                <div class="card-body p-2">
+                    <div class="bg-secondary-subtle text-secondary rounded-circle icon-box md m-auto mb-2">
+                        <i class="bi bi-emoji-smile fs-5"></i>
+                    </div>
+                    <h6 class="mb-0">Class 12</h6>
+                    <small class="text-muted">50 Students</small>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- Row end -->
+    <!-- Row start -->
+    <div class="row gx-4">
+        <div class="col-sm-12">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title">Students Directory</h5>
+                </div>
+                <div class="card-body pt-0">
+
+                    <!-- Grid start -->
+                    <div class="table-outer">
+                        <div class="table-responsive">
+                            <!-- Students Table -->
+                            <table class="table align-middle mb-0 truncate">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Student</th>
+                                        <th>Class</th>
+                                        <th>Roll No</th>
+                                        <th>Gender</th>
+                                        <th>Age</th>
+                                        <th>Contact</th>
+                                        <th>Join Date</th>
+                                        <th>Performance</th>
+                                        <th>Attendance</th>
+                                        <th class="text-end">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <img src="~/assets/assetsuser1/images/user1.png" class="rounded-circle me-3 img-2x" alt="Student">
+                                                <div>
+                                                    <h6 class="mb-0">Emma Johnson</h6>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>10 - A</td>
+                                        <td>12</td>
+                                        <td>Female</td>
+                                        <td>15</td>
+                                        <td>9876543210</td>
+                                        <td>12 Mar 2023</td>
+                                        <td><span class="badge bg-info-subtle text-info">Excellent</span></td>
+                                        <td><span class="badge bg-success-subtle text-success">Present</span></td>
+                                        <td class="text-end">
+                                            <a href="student-profile.html" class="btn btn-sm btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="View Profile">
+                                                <i class="bi bi-eye"></i>
+                                            </a>
+                                            <a href="edit-student.html" class="btn btn-sm btn-outline-warning" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit Student">
+                                                <i class="bi bi-pencil-square"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <img src="~/assets/assetsuser1/images/user2.png" class="rounded-circle me-3 img-2x" alt="Student">
+                                                <div>
+                                                    <h6 class="mb-0">Liam Carter</h6>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>9 - B</td>
+                                        <td>18</td>
+                                        <td>Male</td>
+                                        <td>14</td>
+                                        <td>9876501234</td>
+                                        <td>05 Jan 2024</td>
+                                        <td><span class="badge bg-success-subtle text-success">Very Good</span></td>
+                                        <td><span class="badge bg-success-subtle text-success">Present</span></td>
+                                        <td class="text-end">
+                                            <a href="student-profile.html" class="btn btn-sm btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="View Profile">
+                                                <i class="bi bi-eye"></i>
+                                            </a>
+                                            <a href="edit-student.html" class="btn btn-sm btn-outline-warning" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit Student">
+                                                <i class="bi bi-pencil-square"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <img src="~/assets/assetsuser1/images/user3.png" class="rounded-circle me-3 img-2x" alt="Student">
+                                                <div>
+                                                    <h6 class="mb-0">Sophia Patel</h6>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>8 - A</td>
+                                        <td>22</td>
+                                        <td>Female</td>
+                                        <td>13</td>
+                                        <td>9876512345</td>
+                                        <td>21 Jul 2023</td>
+                                        <td><span class="badge bg-warning-subtle text-warning">Good</span></td>
+                                        <td><span class="badge bg-success-subtle text-success">Present</span></td>
+                                        <td class="text-end">
+                                            <a href="student-profile.html" class="btn btn-sm btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="View Profile">
+                                                <i class="bi bi-eye"></i>
+                                            </a>
+                                            <a href="edit-student.html" class="btn btn-sm btn-outline-warning" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit Student">
+                                                <i class="bi bi-pencil-square"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <img src="~/assets/assetsuser1/images/user4.png" class="rounded-circle me-3 img-2x" alt="Student">
+                                                <div>
+                                                    <h6 class="mb-0">Noah Kim</h6>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>11 - C</td>
+                                        <td>10</td>
+                                        <td>Male</td>
+                                        <td>16</td>
+                                        <td>9876523456</td>
+                                        <td>02 Feb 2023</td>
+                                        <td><span class="badge bg-danger-subtle text-danger">Needs Improvement</span></td>
+                                        <td><span class="badge bg-danger-subtle text-danger">Absent</span></td>
+                                        <td class="text-end">
+                                            <a href="student-profile.html" class="btn btn-sm btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="View Profile">
+                                                <i class="bi bi-eye"></i>
+                                            </a>
+                                            <a href="edit-student.html" class="btn btn-sm btn-outline-warning" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit Student">
+                                                <i class="bi bi-pencil-square"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <img src="~/assets/assetsuser1/images/user5.png" class="rounded-circle me-3 img-2x" alt="Student">
+                                                <div>
+                                                    <h6 class="mb-0">Oliver Singh</h6>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>9 - A</td>
+                                        <td>09</td>
+                                        <td>Male</td>
+                                        <td>14</td>
+                                        <td>9876534567</td>
+                                        <td>10 Apr 2023</td>
+                                        <td><span class="badge bg-info-subtle text-info">Excellent</span></td>
+                                        <td><span class="badge bg-success-subtle text-success">Present</span></td>
+                                        <td class="text-end">
+                                            <a href="student-profile.html" class="btn btn-sm btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="View Profile">
+                                                <i class="bi bi-eye"></i>
+                                            </a>
+                                            <a href="edit-student.html" class="btn btn-sm btn-outline-warning" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit Student">
+                                                <i class="bi bi-pencil-square"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- End Table -->
+                        </div>
+                    </div>
+                    <!-- Grid end -->
+                    <!-- Pagination start -->
+                    <div class="d-flex justify-content-between align-items-center mt-3 flex-wrap">
+                        <div class="text-muted">
+                            Showing <span class="fw-semibold">1-5</span> of <span class="fw-semibold">89</span>
+                        </div>
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination mb-0">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true"><i class="bi bi-arrow-left"></i></span>
+                                    </a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true"><i class="bi bi-arrow-right"></i></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- Pagination end -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Row end -->
+    <!-- Students List Modal -->
+    <div class="modal fade" id="studentListModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Students List</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <!-- Grid start -->
+                    <div class="table-outer">
+                        <div class="table-responsive">
+                            <table class="table align-middle mb-0">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Student</th>
+                                        <th>Section</th>
+                                        <th>Roll No</th>
+                                        <th>Attendance</th>
+                                        <th>Phone</th>
+                                        <th class="text-end">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <img src="~/assets/assetsuser1/images/user.png" alt="Student" class="rounded-circle me-3 img-2x">
+                                                <div>
+                                                    <h6 class="mb-0 fw-semibold">Emma Johnson</h6>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>10 - A</td>
+                                        <td>12</td>
+                                        <td><span class="badge bg-success-subtle text-success">Present</span></td>
+                                        <td>9876543210</td>
+                                        <td class="text-end">
+                                            <a href="student-profile.html" class="btn btn-sm btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="View Profile">
+                                                <i class="bi bi-eye"></i>
+                                            </a>
+                                            <a href="edit-student.html" class="btn btn-sm btn-outline-warning" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit Student">
+                                                <i class="bi bi-pencil-square"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <img src="~/assets/assetsuser1/images/user2.png" alt="Student" class="rounded-circle me-3 img-2x">
+                                                <div>
+                                                    <h6 class="mb-0 fw-semibold">Liam Carter</h6>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>10 - B</td>
+                                        <td>11</td>
+                                        <td><span class="badge bg-danger-subtle text-danger">Absent</span></td>
+                                        <td>9123456789</td>
+                                        <td class="text-end">
+                                            <a href="student-profile.html" class="btn btn-sm btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="View Profile">
+                                                <i class="bi bi-eye"></i>
+                                            </a>
+                                            <a href="edit-student.html" class="btn btn-sm btn-outline-warning" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit Student">
+                                                <i class="bi bi-pencil-square"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <img src="~/assets/assetsuser1/images/user3.png" alt="Student" class="rounded-circle me-3 img-2x">
+                                                <div>
+                                                    <h6 class="mb-0 fw-semibold">Sophia Patel</h6>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>10 - C</td>
+                                        <td>13</td>
+                                        <td><span class="badge bg-success-subtle text-success">Present</span></td>
+                                        <td>9988776655</td>
+                                        <td class="text-end">
+                                            <a href="student-profile.html" class="btn btn-sm btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="View Profile">
+                                                <i class="bi bi-eye"></i>
+                                            </a>
+                                            <a href="edit-student.html" class="btn btn-sm btn-outline-warning" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit Student">
+                                                <i class="bi bi-pencil-square"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <img src="~/assets/assetsuser1/images/user4.png" alt="Student" class="rounded-circle me-3 img-2x">
+                                                <div>
+                                                    <h6 class="mb-0 fw-semibold">Noah Williams</h6>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>10 - C</td>
+                                        <td>12</td>
+                                        <td><span class="badge bg-warning-subtle text-warning">Late</span></td>
+                                        <td>9090909090</td>
+                                        <td class="text-end">
+                                            <a href="student-profile.html" class="btn btn-sm btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="View Profile">
+                                                <i class="bi bi-eye"></i>
+                                            </a>
+                                            <a href="edit-student.html" class="btn btn-sm btn-outline-warning" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit Student">
+                                                <i class="bi bi-pencil-square"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <img src="~/assets/assetsuser1/images/user5.png" alt="Student" class="rounded-circle me-3 img-2x">
+                                                <div>
+                                                    <h6 class="mb-0 fw-semibold">Ava Thomas</h6>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>10 - A</td>
+                                        <td>11</td>
+                                        <td><span class="badge bg-success-subtle text-success">Present</span></td>
+                                        <td>9812345678</td>
+                                        <td class="text-end">
+                                            <a href="student-profile.html" class="btn btn-sm btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="View Profile">
+                                                <i class="bi bi-eye"></i>
+                                            </a>
+                                            <a href="edit-student.html" class="btn btn-sm btn-outline-warning" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit Student">
+                                                <i class="bi bi-pencil-square"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- Grid end -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- App body ends -->

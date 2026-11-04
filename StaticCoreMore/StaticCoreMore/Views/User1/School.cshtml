@@ -1,0 +1,688 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/views/shared/_user1layout.cshtml";
+}
+
+<!-- App body starts -->
+<div class="app-body">
+
+    <!-- Row start -->
+    <div class="row gx-4">
+
+        <!-- Total Students -->
+        <div class="col-xxl-3 col-sm-6 col-12">
+            <div class="card mb-4">
+                <div class="card-body d-flex align-items-center">
+                    <div class="icon-box bg-primary text-white rounded-3 p-3 me-3">
+                        <i class="bi bi-people fs-4"></i>
+                    </div>
+                    <div>
+                        <h6 class="mb-1">Total Students</h6>
+                        <h4 class="mb-0">2,689</h4>
+                        <small class="text-muted">Class I - XII</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- New Admissions -->
+        <div class="col-xxl-3 col-sm-6 col-12">
+            <div class="card mb-4">
+                <div class="card-body d-flex align-items-center">
+                    <div class="icon-box bg-success text-white rounded-3 p-3 me-3">
+                        <i class="bi bi-person-plus fs-4"></i>
+                    </div>
+                    <div>
+                        <h6 class="mb-1">New Admissions</h6>
+                        <h4 class="mb-0">58</h4>
+                        <small class="text-muted">This Month</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Teachers & Staff -->
+        <div class="col-xxl-3 col-sm-6 col-12">
+            <div class="card mb-4">
+                <div class="card-body d-flex align-items-center">
+                    <div class="icon-box bg-warning text-white rounded-3 p-3 me-3">
+                        <i class="bi bi-person-badge fs-4"></i>
+                    </div>
+                    <div>
+                        <h6 class="mb-1">Teachers &amp; Staff</h6>
+                        <h4 class="mb-0">239</h4>
+                        <small class="text-muted">Including admin</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Student-Teacher Ratio -->
+        <div class="col-xxl-3 col-sm-6 col-12">
+            <div class="card mb-4">
+                <div class="card-body d-flex align-items-center">
+                    <div class="icon-box bg-info text-white rounded-3 p-3 me-3">
+                        <i class="bi bi-diagram-3 fs-4"></i>
+                    </div>
+                    <div>
+                        <h6 class="mb-1">Student-Teacher Ratio</h6>
+                        <h4 class="mb-0">10:1</h4>
+                        <small class="text-muted">Balanced</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Row end -->
+    <!-- Row start -->
+    <div class="row gx-4">
+
+        <!-- Average Attendance -->
+        <div class="col-xxl-3 col-sm-6 col-12">
+            <div class="card mb-4">
+                <div class="card-body d-flex align-items-center">
+                    <div class="icon-box bg-success-subtle text-success rounded-3 p-3 me-3">
+                        <i class="bi bi-bar-chart-line fs-4"></i>
+                    </div>
+                    <div>
+                        <h6>Average Attendance</h6>
+                        <h5 class="mb-0 text-success">89.6%</h5>
+                        <small class="text-muted">This Month</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Low Attendance Warning -->
+        <div class="col-xxl-3 col-sm-6 col-12">
+            <div class="card mb-4">
+                <div class="card-body d-flex align-items-center">
+                    <div class="icon-box bg-danger-subtle text-danger rounded-3 p-3 me-3">
+                        <i class="bi bi-exclamation-triangle fs-4"></i>
+                    </div>
+                    <div>
+                        <h6>Low Attendance</h6>
+                        <h5 class="mb-0">3 Classes</h5>
+                        <small class="text-danger">Needs immediate action</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Top Performing Classes -->
+        <div class="col-xxl-3 col-sm-6 col-12">
+            <div class="card mb-4">
+                <div class="card-body d-flex align-items-start">
+                    <div class="icon-box bg-primary-subtle text-primary rounded-3 p-3 me-3">
+                        <i class="bi bi-trophy fs-4"></i>
+                    </div>
+                    <div>
+                        <h6 class="mb-2">Top Performing</h6>
+                        <h5 class="mb-0">Class XI</h5>
+                        <small class="text-success">92% in Science</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pending Assignments / Exams -->
+        <div class="col-xxl-3 col-sm-6 col-12">
+            <div class="card mb-4">
+                <div class="card-body d-flex align-items-center">
+                    <div class="icon-box bg-warning-subtle text-warning rounded-3 p-3 me-3">
+                        <i class="bi bi-journal-text fs-4"></i>
+                    </div>
+                    <div>
+                        <h6 class="mb-2">Pending Tasks</h6>
+                        <h5 class="mb-0">Class VII</h5>
+                        <small class="text-warning">Essay Writing</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Row end -->
+    <!-- Row Start -->
+    <div class="row gx-4">
+        <div class="col-sm-12">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title">Total Fee Collection</h5>
+                </div>
+                <div class="card-body">
+                    <div class="overflow-hidden">
+                        <div id="feeChart" class="chart-height"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Row End -->
+    <!-- Row start -->
+    <div class="row gx-4">
+        <div class="col-sm-12">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title">Pending Dues</h5>
+                </div>
+                <div class="card-body">
+
+                    <!-- Row start -->
+                    <div class="row gx-4">
+                        <div class="col-xxl-9 col-sm-12">
+                            <div class="overflow-hidden">
+                                <div id="pending-dues"></div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-3 col-sm-12">
+                            <div class="scroll300 border rounded-2">
+                                <ul class="m-0 p-3 d-grid gap-4">
+                                    <li class="list-group-item">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <div class="icon-box md bg-primary-subtle text-primary rounded-5"><i class="bi bi-exclamation-circle"></i></div>
+                                            <div class="d-flex justify-content-between w-100 align-items-center">
+                                                <div>
+                                                    <p class="mb-1">Neil Alkerz</p>
+                                                    <p class="text-danger small m-0">64 Days Overdue</p>
+                                                </div>
+                                                <h6 class="m-0 fw-bold">$120</h6>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <div class="icon-box md bg-primary-subtle text-primary rounded-5"><i class="bi bi-exclamation-circle"></i></div>
+                                            <div class="d-flex justify-content-between w-100 align-items-center">
+                                                <div>
+                                                    <p class="mb-1">Sophia Martinez</p>
+                                                    <p class="text-danger small m-0">52 Days Overdue</p>
+                                                </div>
+                                                <h6 class="m-0 fw-bold">$200</h6>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <div class="icon-box md bg-primary-subtle text-primary rounded-5"><i class="bi bi-exclamation-circle"></i></div>
+                                            <div class="d-flex justify-content-between w-100 align-items-center">
+                                                <div>
+                                                    <p class="mb-1">Liam Johnson</p>
+                                                    <p class="text-danger small m-0">35 Days Overdue</p>
+                                                </div>
+                                                <h6 class="m-0 fw-bold">$150</h6>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <div class="icon-box md bg-primary-subtle text-primary rounded-5"><i class="bi bi-exclamation-circle"></i></div>
+                                            <div class="d-flex justify-content-between w-100 align-items-center">
+                                                <div>
+                                                    <p class="mb-1">Zara Khan</p>
+                                                    <p class="text-danger small m-0">27 Days Overdue</p>
+                                                </div>
+                                                <h6 class="m-0 fw-bold">$180</h6>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <div class="icon-box md bg-primary-subtle text-primary rounded-5"><i class="bi bi-exclamation-circle"></i></div>
+                                            <div class="d-flex justify-content-between w-100 align-items-center">
+                                                <div>
+                                                    <p class="mb-1">Ethan Williams</p>
+                                                    <p class="text-danger small m-0">18 Days Overdue</p>
+                                                </div>
+                                                <h6 class="m-0 fw-bold">$95</h6>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <div class="icon-box md bg-primary-subtle text-primary rounded-5"><i class="bi bi-exclamation-circle"></i></div>
+                                            <div class="d-flex justify-content-between w-100 align-items-center">
+                                                <div>
+                                                    <p class="mb-1">Mia Anderson</p>
+                                                    <p class="text-danger small m-0">12 Days Overdue</p>
+                                                </div>
+                                                <h6 class="m-0 fw-bold">$75</h6>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="list-group-item">
+                                        <div class="d-flex align-items-center gap-2">
+                                            <div class="icon-box md bg-primary-subtle text-primary rounded-5"><i class="bi bi-exclamation-circle"></i></div>
+                                            <div class="d-flex justify-content-between w-100 align-items-center">
+                                                <div>
+                                                    <p class="mb-1">Noah Brown</p>
+                                                    <p class="text-danger small m-0">5 Days Overdue</p>
+                                                </div>
+                                                <h6 class="m-0 fw-bold">$60</h6>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Row end -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Row end -->
+    <!-- Row start -->
+    <div class="row gx-4">
+        <div class="col-xxl-6 col-sm-12">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title">Pass Percentage</h5>
+                </div>
+                <div class="card-body">
+                    <div class="scroll350">
+
+                        <!-- Graph start -->
+                        <div class="overflow-hidden">
+                            <div id="passPercentage"></div>
+                        </div>
+                        <!-- Graph end -->
+                        <!-- Row start -->
+                        <div class="row g-4">
+                            <div class="col-sm-4">
+                                <div class="border rounded-2 p-3 text-center">
+                                    <p class="mb-1"><span class="bi bi-play-fill text-primary me-2"></span>Primary</p>
+                                    <h4 class="m-0 fw-semibold">93%</h4>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="border rounded-2 p-3 text-center">
+                                    <p class="mb-1"><span class="bi bi-play-fill text-primary me-2"></span>Middle</p>
+                                    <h4 class="m-0 fw-semibold">95%</h4>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="border rounded-2 p-3 text-center">
+                                    <p class="m-1"><span class="bi bi-play-fill text-primary me-2"></span>Higher</p>
+                                    <h4 class="m-0 fw-semibold">92%</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Row end -->
+                        <!-- Button group starts -->
+                        <div class="row gx-2 justify-content-center mt-3">
+                            <div class="col-sm-4">
+                                <button type="button" class="btn btn-outline-dark w-100 rounded-5">View Stats</button>
+                            </div>
+                            <div class="col-sm-4">
+                                <button type="button" class="btn btn-primary w-100 rounded-5">Download Reports</button>
+                            </div>
+                        </div>
+                        <!-- Button group ends -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xxl-6 col-sm-12 col-12">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title">Library Usage</h5>
+                </div>
+                <div class="card-body">
+                    <div class="scroll350">
+
+                        <!-- Graph start -->
+                        <div class="overflow-hidden">
+                            <div id="library-usage"></div>
+                        </div>
+                        <!-- Graph end -->
+                        <!-- Stats Row -->
+                        <div class="row g-4 text-center">
+                            <div class="col">
+                                <div class="border rounded-2 p-3 text-center">
+                                    <h4 class="fw-bold text-primary mb-1">18</h4>
+                                    <small class="text-muted">Books Issued</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="border rounded-2 p-3 text-center">
+                                    <h4 class="fw-bold text-success mb-1">12</h4>
+                                    <small class="text-muted">Returned</small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="border rounded-2 p-3 text-center">
+                                    <h4 class="fw-bold text-danger mb-1">6</h4>
+                                    <small class="text-muted">Overdue</small>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Row end -->
+                        <!-- Button group starts -->
+                        <div class="row gx-2 justify-content-center mt-3">
+                            <div class="col-sm-4">
+                                <button type="button" class="btn btn-outline-dark w-100 rounded-5">View Books</button>
+                            </div>
+                            <div class="col-sm-4">
+                                <button type="button" class="btn btn-primary w-100 rounded-5">View Reports</button>
+                            </div>
+                        </div>
+                        <!-- Button group ends -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Row end -->
+    <!-- Row start -->
+    <div class="row gx-4">
+        <div class="col-xxl-4 col-sm-6 col-12">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title">Upcoming Events</h5>
+                </div>
+                <div class="card-body">
+                    <div class="scroll350">
+
+                        <!-- List starts -->
+                        <ul class="list-group list-group-flush d-grid gap-3">
+
+                            <!-- Event -->
+                            <li class="list-group-item border-0 p-0 d-flex align-items-center">
+                                <div class="me-3 text-center">
+                                    <div class="icon-box lg d-grid rounded-3 p-2 border">
+                                        <h6 class="mb-0 fw-bold text-body">28</h6>
+                                        <small class="text-muted">Sep</small>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h6 class="mb-1">Parent-Teacher Meeting</h6>
+                                    <small class="text-muted">9:00 AM • Main Auditorium</small>
+                                </div>
+                                <span class="badge bg-primary-subtle text-primary ms-auto px-3 py-2">Event</span>
+                            </li>
+
+                            <!-- International Event -->
+                            <li class="list-group-item border-0 p-0 d-flex align-items-center">
+                                <div class="me-3 text-center">
+                                    <div class="icon-box lg d-grid rounded-3 p-2 border">
+                                        <h6 class="mb-0 fw-bold text-body">05</h6>
+                                        <small class="text-muted">Oct</small>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h6 class="mb-1">World Teachers' Day</h6>
+                                    <small class="text-muted">UNESCO International Day</small>
+                                </div>
+                                <span class="badge bg-success-subtle text-success ms-auto px-3 py-2">International</span>
+                            </li>
+
+                            <!-- International Awareness Event -->
+                            <li class="list-group-item border-0 p-0 d-flex align-items-center">
+                                <div class="me-3 text-center">
+                                    <div class="icon-box lg d-grid rounded-3 p-2 border">
+                                        <h6 class="mb-0 fw-bold text-body">10</h6>
+                                        <small class="text-muted">Oct</small>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h6 class="mb-1">World Mental Health Day</h6>
+                                    <small class="text-muted">Global Awareness Campaign</small>
+                                </div>
+                                <span class="badge bg-warning-subtle text-warning ms-auto px-3 py-2">International</span>
+                            </li>
+
+                            <!-- Event -->
+                            <li class="list-group-item border-0 p-0 d-flex align-items-center">
+                                <div class="me-3 text-center">
+                                    <div class="icon-box lg d-grid rounded-3 p-2 border">
+                                        <h6 class="mb-0 fw-bold text-body">15</h6>
+                                        <small class="text-muted">Nov</small>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h6 class="mb-1">Annual Sports Day</h6>
+                                    <small class="text-muted">School Playground</small>
+                                </div>
+                                <span class="badge bg-info-subtle text-info ms-auto px-3 py-2">Event</span>
+                            </li>
+
+                            <!-- International Holiday -->
+                            <li class="list-group-item border-0 p-0 d-flex align-items-center">
+                                <div class="me-3 text-center">
+                                    <div class="icon-box lg d-grid rounded-3 p-2 border">
+                                        <h6 class="mb-0 fw-bold text-body">25</h6>
+                                        <small class="text-muted">Dec</small>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h6 class="mb-1">Christmas Day</h6>
+                                    <small class="text-muted">Public Holiday (Worldwide)</small>
+                                </div>
+                                <span class="badge bg-danger-subtle text-danger ms-auto px-3 py-2">Holiday</span>
+                            </li>
+
+                        </ul>
+                        <!-- List ends -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xxl-4 col-sm-6 col-12">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title">Sports &amp; Activities</h5>
+                </div>
+                <div class="card-body">
+                    <div class="scroll350">
+
+                        <!-- List start -->
+                        <div class="d-grid gap-4">
+
+                            <!-- Morning Sports Activity -->
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="icon-box sm rounded-5 bg-success">
+                                    <i class="bi bi-basket2-fill"></i>
+                                </div>
+                                <div>
+                                    <h6 class="text-success fw-bold">08:00 AM</h6>
+                                    <p class="m-0">
+                                        Morning Drill - Physical training and warm-up exercises for students.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Cultural Activity -->
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="icon-box sm rounded-5 bg-warning">
+                                    <i class="bi bi-music-note-beamed"></i>
+                                </div>
+                                <div>
+                                    <h6 class="text-warning fw-bold">09:30 AM</h6>
+                                    <p class="m-0">
+                                        Music &amp; Dance Session - Group practice for upcoming cultural programs.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Sports Tournament -->
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="icon-box sm rounded-5 bg-primary">
+                                    <i class="bi bi-trophy-fill"></i>
+                                </div>
+                                <div>
+                                    <h6 class="text-primary fw-bold">11:00 AM</h6>
+                                    <p class="m-0">
+                                        Football Tournament - Inter-class football matches in school ground.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Art & Craft -->
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="icon-box sm rounded-5 bg-info">
+                                    <i class="bi bi-brush-fill"></i>
+                                </div>
+                                <div>
+                                    <h6 class="text-info fw-bold">01:00 PM</h6>
+                                    <p class="m-0">
+                                        Art &amp; Craft Workshop - Creative activities for painting and handicrafts.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Cultural Presentation -->
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="icon-box sm rounded-5 bg-danger">
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <div>
+                                    <h6 class="text-danger fw-bold">03:00 PM</h6>
+                                    <p class="m-0">
+                                        Drama &amp; Skit - Students perform short plays and cultural skits.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Evening Sports -->
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="icon-box sm rounded-5 bg-dark">
+                                    <i class="bi bi-bicycle"></i>
+                                </div>
+                                <div>
+                                    <h6 class="text-dark fw-bold">04:30 PM</h6>
+                                    <p class="m-0">
+                                        Evening Cycling &amp; Fitness - Outdoor physical activities to end the day.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- List ends -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xxl-4 col-sm-12 col-12">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title">Notifications</h5>
+                </div>
+                <div class="card-body">
+                    <div class="scroll350">
+
+                        <!-- List starts -->
+                        <ul class="list-group list-group-flush d-grid gap-3">
+
+                            <!-- Teacher Announcement -->
+                            <li class="list-group-item p-0">
+                                <div class="mb-2">
+                                    <div class="icon-box sm rounded-5 bg-primary">
+                                        <i class="bi bi-person-fill"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <p class="mb-1">Mr. John Smith posted a new announcement</p>
+                                    <small class="text-muted">Class 10 Science • 15 min ago</small>
+                                </div>
+                                <span class="badge bg-primary-subtle text-primary mb-2">Announcement</span>
+                            </li>
+
+                            <!-- New Assignment -->
+                            <li class="list-group-item p-0">
+                                <div class="mb-2">
+                                    <div class="icon-box sm rounded-5 bg-success">
+                                        <i class="bi bi-journal-plus"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <p class="mb-1">New Assignment: US History Essay</p>
+                                    <small class="text-muted">Due: In 5 Days</small>
+                                </div>
+                                <span class="badge bg-success-subtle text-success mb-2">Assignment</span>
+                            </li>
+
+                            <!-- Class Update -->
+                            <li class="list-group-item p-0">
+                                <div class="mb-2">
+                                    <div class="icon-box sm rounded-5 bg-warning">
+                                        <i class="bi bi-easel-fill"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <p class="mb-1">Class 12 English: Room Change</p>
+                                    <small class="text-muted">New room: 210 • Effective from Last 2 Days</small>
+                                </div>
+                                <span class="badge bg-warning-subtle text-warning mb-2">Update</span>
+                            </li>
+
+                            <!-- Exam Info -->
+                            <li class="list-group-item p-0">
+                                <div class="mb-2">
+                                    <div class="icon-box sm rounded-5 bg-danger">
+                                        <i class="bi bi-pencil-square"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <p class="mb-1">Upcoming Exam: Algebra I Midterm</p>
+                                    <small class="text-muted">Date: In 5 Days • Room: 305</small>
+                                </div>
+                                <span class="badge bg-danger-subtle text-danger mb-2">Exam</span>
+                            </li>
+
+                            <!-- School Event -->
+                            <li class="list-group-item p-0">
+                                <div class="mb-2">
+                                    <div class="icon-box sm rounded-5 bg-info">
+                                        <i class="bi bi-calendar-event"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <p class="mb-1">Fall Festival Announcement</p>
+                                    <small class="text-muted">Event In 7 Days • School Gym</small>
+                                </div>
+                                <span class="badge bg-info-subtle text-info mb-2">Event</span>
+                            </li>
+
+                        </ul>
+                        <!-- List ends -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Row end -->
+        <!-- Toast message for download data example starts -->
+        <div class="toast-container position-fixed bottom-0 end-0 p-3 mt-5">
+            <div id="downloadData" class="toast text-bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <strong class="me-auto">Downloading</strong>
+                    <small>Just now</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    Data successfully downloading.
+                </div>
+            </div>
+        </div>
+        <!-- Toast message for download data example ends -->
+
+    </div>
+    <!-- Row end -->
+
+</div>
+<!-- App body ends -->

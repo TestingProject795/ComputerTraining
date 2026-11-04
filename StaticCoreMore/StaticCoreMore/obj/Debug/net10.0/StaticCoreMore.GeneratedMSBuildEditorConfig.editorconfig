@@ -1,0 +1,140 @@
+is_global = true
+build_property.TargetFramework = net10.0
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v10.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EntryPointFilePath = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = StaticCoreMore
+build_property.RootNamespace = StaticCoreMore
+build_property.ProjectDir = E:\ProjectsGit\ComputerTraining\StaticCoreMore\StaticCoreMore\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 10.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = E:\ProjectsGit\ComputerTraining\StaticCoreMore\StaticCoreMore
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 10.0
+build_property.EnableCodeStyleSeverity = 
+
+[E:/ProjectsGit/ComputerTraining/StaticCoreMore/StaticCoreMore/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ProjectsGit/ComputerTraining/StaticCoreMore/StaticCoreMore/Views/Associate/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzb2NpYXRlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ProjectsGit/ComputerTraining/StaticCoreMore/StaticCoreMore/Views/College/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29sbGVnZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ProjectsGit/ComputerTraining/StaticCoreMore/StaticCoreMore/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ProjectsGit/ComputerTraining/StaticCoreMore/StaticCoreMore/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ProjectsGit/ComputerTraining/StaticCoreMore/StaticCoreMore/Views/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ProjectsGit/ComputerTraining/StaticCoreMore/StaticCoreMore/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ProjectsGit/ComputerTraining/StaticCoreMore/StaticCoreMore/Views/Shared/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ProjectsGit/ComputerTraining/StaticCoreMore/StaticCoreMore/Views/Shared/_AssociateLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Bc3NvY2lhdGVMYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ProjectsGit/ComputerTraining/StaticCoreMore/StaticCoreMore/Views/Shared/_CollegeLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Db2xsZWdlTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ProjectsGit/ComputerTraining/StaticCoreMore/StaticCoreMore/Views/Shared/_StudentLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TdHVkZW50TGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ProjectsGit/ComputerTraining/StaticCoreMore/StaticCoreMore/Views/Shared/_User1Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Vc2VyMUxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ProjectsGit/ComputerTraining/StaticCoreMore/StaticCoreMore/Views/Shared/_UserLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Vc2VyTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ProjectsGit/ComputerTraining/StaticCoreMore/StaticCoreMore/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ProjectsGit/ComputerTraining/StaticCoreMore/StaticCoreMore/Views/Student/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ProjectsGit/ComputerTraining/StaticCoreMore/StaticCoreMore/Views/User1/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcjFcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ProjectsGit/ComputerTraining/StaticCoreMore/StaticCoreMore/Views/User1/InvoiceCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcjFcSW52b2ljZUNyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ProjectsGit/ComputerTraining/StaticCoreMore/StaticCoreMore/Views/User1/InvoiceList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcjFcSW52b2ljZUxpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ProjectsGit/ComputerTraining/StaticCoreMore/StaticCoreMore/Views/User1/InvoiceView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcjFcSW52b2ljZVZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ProjectsGit/ComputerTraining/StaticCoreMore/StaticCoreMore/Views/User1/School.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcjFcU2Nob29sLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ProjectsGit/ComputerTraining/StaticCoreMore/StaticCoreMore/Views/User1/Student.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcjFcU3R1ZGVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ProjectsGit/ComputerTraining/StaticCoreMore/StaticCoreMore/Views/User1/StudentList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcjFcU3R1ZGVudExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ProjectsGit/ComputerTraining/StaticCoreMore/StaticCoreMore/Views/User1/StudentProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcjFcU3R1ZGVudFByb2ZpbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ProjectsGit/ComputerTraining/StaticCoreMore/StaticCoreMore/Views/User1/Teacher.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcjFcVGVhY2hlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ProjectsGit/ComputerTraining/StaticCoreMore/StaticCoreMore/Views/User1/Widgets.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcjFcV2lkZ2V0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ProjectsGit/ComputerTraining/StaticCoreMore/StaticCoreMore/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ProjectsGit/ComputerTraining/StaticCoreMore/StaticCoreMore/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ProjectsGit/ComputerTraining/StaticCoreMore/StaticCoreMore/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/ProjectsGit/ComputerTraining/StaticCoreMore/StaticCoreMore/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-903hwuov39

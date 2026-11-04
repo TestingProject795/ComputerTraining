@@ -1,0 +1,447 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/views/shared/_user1layout.cshtml";
+}
+
+<!-- App body starts -->
+<div class="app-body">
+
+    <!-- Row start -->
+    <div class="row gx-4">
+        <!-- Profile Header -->
+        <div class="col-12">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <div class="d-flex flex-column flex-md-row align-items-center flex-wrap">
+                        <div class="position-relative me-md-4 mb-3 mb-md-0">
+                            <img src="~/assets/assetsuser1/images/user3.png" class="rounded-circle img-7x border border-3 border-primary" alt="Student Image">
+                            <button type="button" class="btn btn-icon btn-primary position-absolute bottom-0 end-0 rounded-circle">
+                                <i class="bi bi-camera-fill"></i>
+                            </button>
+                        </div>
+
+                        <div class="text-center text-md-start flex-grow-1">
+                            <h3 class="mb-1">Emma Johnson</h3>
+                            <p class="text-muted mb-2 fs-6">Class 10 - A | Roll No: 12</p>
+
+                            <div class="d-flex flex-wrap justify-content-center justify-content-md-start gap-1 mb-3">
+                                <span class="badge bg-primary rounded-pill px-2">Science Stream</span>
+                                <span class="badge bg-info rounded-pill px-2">Excellent</span>
+                                <span class="badge bg-success rounded-pill px-2">Present Today</span>
+                            </div>
+
+                            <p class="mb-2 text-muted fst-italic">
+                                “Always eager to learn and explore new scientific concepts.”
+                            </p>
+                        </div>
+
+                        <div class="d-flex gap-2 mt-3 mt-md-0">
+                            <button type="button" class="btn btn-primary">
+                                <i class="bi bi-chat-fill me-1"></i> Message
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary">
+                                <i class="bi bi-envelope me-1"></i> Email
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left Column -->
+        <div class="col-xxl-4 col-sm-12">
+            <!-- Basic Information -->
+            <div class="card mb-4">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h5 class="card-title">Basic Information</h5>
+                    <a href="edit-teacher.html" type="button" class="btn btn-sm btn-outline-primary">
+                        <i class="bi bi-pencil"></i>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <span class="small text-muted">Full Name</span>
+                        <p class="mb-0 fw-semibold text-dark">Emma Johnson</p>
+                    </div>
+                    <div class="mb-3">
+                        <span class="small text-muted">Email</span>
+                        <p class="mb-0 fw-semibold text-dark">emma.johnson@example.com</p>
+                    </div>
+                    <div class="mb-3">
+                        <span class="small text-muted">Phone</span>
+                        <p class="mb-0 fw-semibold text-dark">+1 (555) 987-6543</p>
+                    </div>
+                    <div class="mb-3">
+                        <span class="small text-muted">Date of Birth</span>
+                        <p class="mb-0 fw-semibold text-dark">April 22, 2007</p>
+                    </div>
+                    <div>
+                        <span class="small text-muted">Joining Date</span>
+                        <p class="mb-0 fw-semibold text-dark">March 12, 2020</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Student Info -->
+            <div class="card mb-4">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h5 class="card-title">Student Information</h5>
+                    <a href="edit-student.html" type="button" class="btn btn-sm btn-outline-primary">
+                        <i class="bi bi-pencil"></i>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <span class="small text-muted">Class &amp; Section</span>
+                        <p class="mb-0 fw-semibold text-dark">10 - A</p>
+                    </div>
+                    <div class="mb-3">
+                        <span class="small text-muted">Roll Number</span>
+                        <p class="mb-0 fw-semibold text-dark">12</p>
+                    </div>
+                    <div class="mb-3">
+                        <span class="small text-muted">Subjects</span>
+                        <p class="mb-0 fw-semibold text-dark">Mathematics, Science, English</p>
+                    </div>
+                    <div class="mb-3">
+                        <span class="small text-muted">Attendance</span>
+                        <p class="mb-0 fw-semibold text-dark">95%</p>
+                    </div>
+                    <div>
+                        <span class="small text-muted">Performance</span>
+                        <p class="mb-0 fw-semibold text-dark">Excellent</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact & Address -->
+            <div class="card mb-4">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h5 class="card-title">Contact &amp; Address</h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <span class="small text-muted">School Address</span>
+                        <p class="mb-0 fw-semibold text-dark">123 Greenfield Road, New York, NY 10001</p>
+                    </div>
+                    <div class="mb-3">
+                        <span class="small text-muted">Home Address</span>
+                        <p class="mb-0 fw-semibold text-dark">45 Elm Street, Brooklyn, NY 11201</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Online Classes -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title">Online Classes</h5>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-camera-video fs-4 text-primary me-3"></i>
+                                <div>
+                                    <p class="mb-0 fw-semibold">Mathematics</p>
+                                    <small class="text-muted">Next class: Today at 10:00 AM</small>
+                                </div>
+                            </div>
+                            <span class="badge bg-success rounded-pill">Ongoing</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-camera-video fs-4 text-primary me-3"></i>
+                                <div>
+                                    <p class="mb-0 fw-semibold">Science</p>
+                                    <small class="text-muted">Next class: Today at 1:00 PM</small>
+                                </div>
+                            </div>
+                            <span class="badge bg-warning rounded-pill">Upcoming</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-camera-video-off fs-4 text-secondary me-3"></i>
+                                <div>
+                                    <p class="mb-0 fw-semibold">English</p>
+                                    <small class="text-muted">Last class: Yesterday at 11:00 AM</small>
+                                </div>
+                            </div>
+                            <span class="badge bg-secondary rounded-pill">Completed</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title">Social Media Links</h5>
+                    <a href="edit-teacher.html" type="button" class="btn btn-sm btn-outline-primary">
+                        <i class="bi bi-pencil"></i>
+                    </a>
+                </div>
+                <div class="card-body d-flex justify-content-around">
+                    <a href="javascript:void(0)" class="icon-box md rounded-5 bg-primary-subtle text-primary" aria-label="LinkedIn">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="javascript:void(0)" class="icon-box md rounded-5 bg-info-subtle text-info" aria-label="Twitter">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+                    <a href="javascript:void(0)" class="icon-box md rounded-5 bg-dark-subtle text-dark" aria-label="GitHub">
+                        <i class="bi bi-github"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Right Column -->
+        <div class="col-xxl-8 col-sm-12">
+            <!-- Attendance Overview -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title">Attendance Overview</h5>
+                </div>
+                <div class="card-body">
+                    <div class="overflow-hidden">
+                        <div id="attendance-overview"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Classes & Timetable -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title">Upcoming Classes</h5>
+                </div>
+                <div class="card-body pt-0">
+                    <div class="table-outer">
+                        <table class="table table-hover align-middle mb-0">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Class</th>
+                                    <th>Subject</th>
+                                    <th>Teacher</th>
+                                    <th>Time</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Grade 9 - B</td>
+                                    <td>Algebra</td>
+                                    <td>Mr. Alexander Reed</td>
+                                    <td>09:00 AM - 09:45 AM</td>
+                                </tr>
+                                <tr>
+                                    <td>Grade 9 - B</td>
+                                    <td>English Literature</td>
+                                    <td>Mrs. Isabella Carter</td>
+                                    <td>10:00 AM - 10:45 AM</td>
+                                </tr>
+                                <tr>
+                                    <td>Grade 9 - B</td>
+                                    <td>Biology</td>
+                                    <td>Dr. Benjamin Foster</td>
+                                    <td>11:00 AM - 11:45 AM</td>
+                                </tr>
+                                <tr>
+                                    <td>Grade 9 - B</td>
+                                    <td>Physical Education</td>
+                                    <td>Mr. Nathaniel Brooks</td>
+                                    <td>01:00 PM - 01:45 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Grade 9 - B</td>
+                                    <td>Art</td>
+                                    <td>Ms. Victoria Simmons</td>
+                                    <td>02:00 PM - 02:45 PM</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tasks & Projects Assigned -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title">Activities</h5>
+                </div>
+                <div class="card-body pt-0">
+                    <div class="table-outer">
+                        <div class="table-responsive">
+                            <table class="table table-hover align-middle mb-1">
+                                <thead>
+                                    <tr>
+                                        <th>Activity</th>
+                                        <th>Type</th>
+                                        <th>When</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <div class="icon-box sm rounded-3 bg-info-transparent me-2">
+                                                    <i class="bi bi-people text-info"></i>
+                                                </div>
+                                                <div>
+                                                    <p class="mb-0 fw-medium">Parent-Teacher Meeting</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><span class="badge bg-info">Meeting</span></td>
+                                        <td>Today</td>
+                                        <td><span class="badge bg-warning">Upcoming</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <div class="icon-box sm rounded-3 bg-success-transparent me-2">
+                                                    <i class="bi bi-journal-text text-success"></i>
+                                                </div>
+                                                <div>
+                                                    <p class="mb-0 fw-medium">Mathematics Workshop</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><span class="badge bg-success">Workshop</span></td>
+                                        <td>In 2 Days</td>
+                                        <td><span class="badge bg-warning">Upcoming</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <div class="icon-box sm rounded-3 bg-warning-transparent me-2">
+                                                    <i class="bi bi-clipboard-check text-warning"></i>
+                                                </div>
+                                                <div>
+                                                    <p class="mb-0 fw-medium">Online Quiz - Grade 10</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><span class="badge bg-warning">Quiz</span></td>
+                                        <td>Tomorrow</td>
+                                        <td><span class="badge bg-info">In Progress</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center">
+                                                <div class="icon-box sm rounded-3 bg-danger-transparent me-2">
+                                                    <i class="bi bi-pencil-square text-danger"></i>
+                                                </div>
+                                                <div>
+                                                    <p class="mb-0 fw-medium">Submit Science Project</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td><span class="badge bg-danger">Assignment</span></td>
+                                        <td>In 3 Days</td>
+                                        <td><span class="badge bg-warning">Pending</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rewards & Points -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="card-title">Points &amp; Achievements</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row align-items-center mb-4">
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-box lg rounded-circle bg-warning-subtle me-3">
+                                    <i class="bi bi-clipboard-check fs-3 text-warning"></i>
+                                </div>
+                                <div>
+                                    <h3 class="mb-1">45</h3>
+                                    <p class="text-muted mb-0">Assignments Completed</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="progress mb-2 medium">
+                                <div class="progress-bar bg-warning w-60"></div>
+                            </div>
+                            <p class="mb-0 text-center">3 more assignments to reach monthly goal</p>
+                        </div>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="p-4 border rounded-3 text-center">
+                                <div class="icon-box md rounded-5 border border-primary bg-primary-subtle m-auto mb-3">
+                                    <i class="bi bi-award text-primary fs-6"></i>
+                                </div>
+                                <h6 class="mb-2 fw-semibold">Badges &amp; Honors</h6>
+                                <p class="mb-0 text-muted small">Showcase your earned badges and honors.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="p-4 border rounded-3 text-center">
+                                <div class="icon-box md rounded-5 border border-success bg-success-subtle m-auto mb-3">
+                                    <i class="bi bi-journal-check text-success fs-6"></i>
+                                </div>
+                                <h6 class="mb-2 fw-semibold">Teacher Feedback</h6>
+                                <p class="mb-0 text-muted small">View ratings and feedback from your teachers.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="p-4 border rounded-3 text-center">
+                                <div class="icon-box md rounded-5 border border-info bg-info-subtle m-auto mb-3">
+                                    <i class="bi bi-clock-history text-info fs-6"></i>
+                                </div>
+                                <h6 class="mb-2 fw-semibold">Attendance Record</h6>
+                                <p class="mb-0 text-muted small">Track your attendance and class participation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Danger Zone -->
+            <div class="card bg-danger-subtle border border-danger">
+                <div class="card-header bg-danger-subtle">
+                    <h5 class="card-title text-danger">Important</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row align-items-center mb-4">
+                        <div class="col-md-8">
+                            <h6 class="mb-1 text-danger">Delete Account</h6>
+                            <p class="text-muted mb-0">
+                                Deleting your account is irreversible. Please proceed with caution.
+                            </p>
+                        </div>
+                        <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                            <button type="button" class="btn btn-danger" aria-label="Delete Account">
+                                <i class="bi bi-trash-fill me-1"></i>Delete Account
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-md-8">
+                            <h6 class="mb-1 text-primary">Export Data</h6>
+                            <p class="text-muted mb-0">Ensure you download all your data before account deletion.</p>
+                        </div>
+                        <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                            <button type="button" class="btn btn-outline-primary" aria-label="Export Data">
+                                <i class="bi bi-download me-1"></i>Export Data
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Row end -->
+
+</div>
+<!-- App body ends -->
